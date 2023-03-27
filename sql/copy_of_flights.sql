@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS public.flights
+(
+    id integer NOT NULL DEFAULT 'nextval('flights_id_seq'::regclass)',
+    year integer,
+    month integer,
+    day_of_month integer,
+    day_of_week integer,
+    dep_time double precision,
+    crs_dep_time integer,
+    arr_time double precision,
+    crs_arr_time integer,
+    unique_carrier character varying(30) COLLATE pg_catalog."default",
+    flight_num character varying COLLATE pg_catalog."default",
+    tail_num double precision,
+    actual_elapsed_time double precision,
+    crs_elapsed_time integer,
+    arr_delay double precision,
+    dep_delay double precision,
+    origin character varying(30) COLLATE pg_catalog."default",
+    dest character varying(30) COLLATE pg_catalog."default",
+    distance double precision,
+    cancelled integer,
+    diverted integer,
+    air_time double precision,
+    taxi_in double precision,
+    taxi_out double precision,
+    CONSTRAINT flights_pkey PRIMARY KEY (id)
+)

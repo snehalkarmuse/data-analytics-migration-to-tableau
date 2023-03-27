@@ -1,0 +1,1 @@
+select count(dest)as destination,dest from flights group by dest order by count(dest) desc
