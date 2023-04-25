@@ -1,4 +1,4 @@
-![alt text](https://miro.medium.com/v2/resize:fit:1400/1*5YXDDa2BIkLKfmg26yvGAw.png)
+
 # Data Analytics Migration Tableau
 - In flights.py, joined multiple csv into a csv file called combined_data.csv.
 - Cleaned the data using Pandas.
